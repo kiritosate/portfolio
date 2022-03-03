@@ -1,0 +1,103 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    justify-content: space-between;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#start{
+    text-align: center;
+    font-size: 1.7em;
+    padding: 5rem;
+}
+#start h6, #start h1{
+    text-transform: uppercase;
+}
+.drop{
+    background-color: rgb(255, 255, 255);
+    font-size: 3rem;
+    padding: .5em;
+    border-radius: .15em;
+    border: none;
+}
+
+.drop{
+    animation: rotate 0.5s ease-in-out!important;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(45deg);
+    }100%{
+        transform: rotate(100deg);
+    }
+}
+@keyframes roll{
+    0%{
+        height: 0%;
+    }100%{
+        height: initial;
+    }
+}
+@keyframes show{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+.aboutme{
+    width: max-content;
+    padding: 2.5rem;
+    max-width: 85%;
+    height: max-content;
+    margin-top: 40rem;
+    border: none;
+    border-radius: .2em;
+    animation: show .5s ease!important;
+    display: none;
+}
+.context{
+    background-color: rgb(230, 230, 230);
+    padding: .5em 1.5em .9em 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#prof{
+    filter: contrast(2);
+    filter: drop-shadow(29);
+}
+.school p{
+    font-size: .8em;
+}
+.games p{
+    font-size: .8em;
+}
+.games>li{
+    list-style: none;
+    text-align: left;
+}
+.games>li img{
+    border: 3px solid black;
+}
+.flex{
+    display: flex;
+}
+#start ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+#start ul>li a{
+    text-decoration: none;
+    color: black;
+    margin: .3em;
+    padding: .2em;
+}
+#start ul>li a i{
+    font-size: 2em;
+}
